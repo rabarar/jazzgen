@@ -24,49 +24,85 @@ const chordGroups = {
   "Major Chords": [
     // Shape Root6: Root on 6th string (relative to root position)
     { 
-      name: "Root6", 
+      name: "Maj-Root6", 
       frets: [0, null, -3, 1, null, null], // Relative to root fret
       root: { string: 0, fret: 0 }, // Root is at fret 0 of this shape
       rootInterval: "root" // This shape has the root on the 6th string
     },
     // Shape Third6: Major 3rd on 6th string (relative to where 3rd should be)
     { 
-      name: "Third6", 
+      name: "Maj-Third6", 
       frets: [0, null, -2, 0, null, null], // Relative to where major 3rd is
       root: { string: 0, fret: 0 }, // Reference point is at fret 0
       rootInterval: "third" // This shape positions the major 3rd on the 6th string
     },
     // Shape Fifth6: Perfect 5th on 6th string (relative to where 5th should be)
     { 
-      name: "Fifth6", 
+      name: "Maj-Fifth6", 
       frets: [0, null, -1, 2, null, null], // Relative to where perfect 5th is
       root: { string: 0, fret: 0 }, // Reference point is at fret 0
       rootInterval: "fifth" // This shape positions the perfect 5th on the 6th string
     }
   ],
-  "Major7 Chords": [
+  "Major 7th Chords": [
     // Shape Root6: Root on 6th string (relative to root position)
     { 
-      name: "Root6", 
-      frets: [0, null, -3, 1, null, null], // Relative to root fret
+      name: "7th-Root6", 
+      frets: [0, null, -1, -1, 0, null], // Relative to root fret
       root: { string: 0, fret: 0 }, // Root is at fret 0 of this shape
       rootInterval: "root" // This shape has the root on the 6th string
     },
     // Shape Third6: Major 3rd on 6th string (relative to where 3rd should be)
     { 
-      name: "Third6", 
-      frets: [0, null, -2, 0, null, null], // Relative to where major 3rd is
+      name: "7th-Third6", 
+      frets: [0, null, -2, 0, 0, null], // Relative to where major 3rd is
       root: { string: 0, fret: 0 }, // Reference point is at fret 0
       rootInterval: "third" // This shape positions the major 3rd on the 6th string
     },
     // Shape Fifth6: Perfect 5th on 6th string (relative to where 5th should be)
     { 
-      name: "Fifth6", 
-      frets: [0, null, -1, 2, null, null], // Relative to where perfect 5th is
+      name: "7th-Fifth6", 
+      frets: [0, null, -1, 1, null, null], // Relative to where perfect 5th is
+      root: { string: 0, fret: 0 }, // Reference point is at fret 0
+      rootInterval: "fifth" // This shape positions the perfect 5th on the 6th string
+    },
+    { 
+      name: "7th-Seventh6", 
+      frets: [0, null, -2, -2, -2, null], // Relative to where perfect 5th is
+      root: { string: 0, fret: 0 }, // Reference point is at fret 0
+      rootInterval: "seventh" // This shape positions the perfect 5th on the 6th string
+    }
+  ],
+  "6 Chords": [
+    // Shape Root6: Root on 6th string (relative to root position)
+    { 
+      name: "6th-Root6", 
+      frets: [0, null, -1, 1, 0, null], // Relative to root fret
+      root: { string: 0, fret: 0 }, // Root is at fret 0 of this shape
+      rootInterval: "root" // This shape has the root on the 6th string
+    },
+    // Shape Third6: Major 3rd on 6th string (relative to where 3rd should be)
+    { 
+      name: "6th-Third6", 
+      frets: [0, null, -2, 0, -2, null], // Relative to where major 3rd is
+      root: { string: 0, fret: 0 }, // Reference point is at fret 0
+      rootInterval: "third" // This shape positions the major 3rd on the 6th string
+    },
+    // Shape Fifth6: Perfect 5th on 6th string (relative to where 5th should be)
+    { 
+      name: "6th-Fifth6", 
+      frets: [0, null, -1, -1, -2, null], // Relative to where perfect 5th is
+      root: { string: 0, fret: 0 }, // Reference point is at fret 0
+      rootInterval: "fifth" // This shape positions the perfect 5th on the 6th string
+    },
+    // Shape Sixth: 6th on 6th string (relative to where 6th should be)
+    { 
+      name: "6th-Fifth6", 
+      frets: [0, null, 0, 0, 0, null], // Relative to where perfect 5th is
       root: { string: 0, fret: 0 }, // Reference point is at fret 0
       rootInterval: "fifth" // This shape positions the perfect 5th on the 6th string
     }
-  ]
+  ],
 };
 
 const groupOptions = Object.keys(chordGroups);
