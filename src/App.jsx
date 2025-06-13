@@ -97,7 +97,7 @@ const chordGroups = {
     },
     // Shape Sixth: 6th on 6th string (relative to where 6th should be)
     { 
-      name: "6th-Fifth6", 
+      name: "6th-Seventh6", 
       frets: [0, null, 0, 0, 0, null], // Relative to where perfect 5th is
       root: { string: 0, fret: 0 }, // Reference point is at fret 0
       rootInterval: "fifth" // This shape positions the perfect 5th on the 6th string
